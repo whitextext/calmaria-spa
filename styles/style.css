@@ -1,0 +1,346 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+header {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  padding: 2rem;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+header nav .linha {
+  border-top: 1px solid #000000;
+  margin: 0 auto;
+  width: 80%;
+}
+header nav ul {
+  height: 20px;
+  display: inline-flex;
+  gap: 10px;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #0C0421;
+  text-decoration: none;
+  transition: 0.5s;
+}
+header nav ul li a:hover {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #0C0421;
+  transition: 0.5s;
+}
+header #home {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 80%;
+}
+header #home .textos-home {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 30px;
+  max-width: 464px;
+}
+header #home .textos-home h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #0C0421;
+}
+header #home .textos-home h1 span {
+  color: #4e75ff;
+}
+header #home .textos-home button {
+  max-width: 280px;
+  font-family: "Krona One", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #FFFFFF;
+  padding: 24px 30px;
+  border-radius: 40px;
+  background-color: rgba(78, 116, 255, 0.4784313725);
+  transition: 0.5s;
+}
+header #home .textos-home button:hover {
+  background-color: #4e75ff;
+  transition: 0.5s;
+}
+header #home .img-home img {
+  width: 100%;
+}
+
+main #nosso-espaco {
+  margin: 0 auto;
+  width: 80%;
+}
+main #nosso-espaco .detalhes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main #nosso-espaco .detalhes:nth-child(2) {
+  flex-flow: row-reverse nowrap;
+}
+main #nosso-espaco .detalhes .imgs-espaco {
+  max-width: 500px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+}
+main #nosso-espaco .detalhes .espaco-textos {
+  max-width: 500px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+}
+main #nosso-espaco .detalhes .espaco-textos .titulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #4e75ff;
+}
+main #nosso-espaco .detalhes .espaco-textos .infos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #0C0421;
+}
+main #nosso-espaco .detalhes .espaco-textos .separador {
+  width: 100%;
+}
+
+main #servico {
+  margin: 0 auto;
+  width: 80%;
+  padding: 100px 0;
+}
+main #servico .cards {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main #servico .cards .card {
+  max-width: 384px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+}
+main #servico .cards .card img {
+  width: -moz-max-content;
+  width: max-content;
+}
+main #servico .cards .card h3 {
+  font-family: "Krona One", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #0C0421;
+  text-align: center;
+}
+main #servico .cards .card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #0C0421;
+}
+
+main #desconto {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main #desconto .desconto-form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  align-items: center;
+}
+main #desconto .desconto-form h4 {
+  font-family: "Krona One", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #0C0421;
+}
+main #desconto .desconto-form p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #0C0421;
+}
+main #desconto .desconto-form .input-btn {
+  width: 50vw;
+  height: 70px;
+  display: flex;
+}
+main #desconto .desconto-form .input-btn input, main #desconto .desconto-form .input-btn button {
+  width: 66%;
+  height: 100%;
+  border-radius: 30px 0 0 30px;
+  border: 1px solid #4e75ff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000000;
+}
+main #desconto .desconto-form .input-btn button {
+  width: 33%;
+  border-radius: 0 30px 30px 0;
+  background-color: #4e75ff;
+  font-family: "Krona One", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+main #desconto .desconto-form .input-btn button:hover {
+  box-shadow: inset 1px 1px 5px 1px #000000;
+}
+
+main #contatos {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+main #contatos .contatos-imgs {
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-around;
+}
+main #contatos .contatos-imgs img {
+  width: 100%;
+}
+main #contatos .contatos-imgs img:nth-child(n+2) {
+  width: 48%;
+}
+main #contatos .contatos-form {
+  max-width: 50%;
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+}
+main #contatos .contatos-form .titulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #0C0421;
+}
+main #contatos .contatos-form .infos, main #contatos .contatos-form .inputs .form-group label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #0C0421;
+}
+main #contatos .contatos-form .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+main #contatos .contatos-form .inputs input, main #contatos .contatos-form .inputs .btn, main #contatos .contatos-form .inputs .form-group textarea {
+  border-radius: 25px;
+  padding: 1rem;
+  border: none;
+}
+main #contatos .contatos-form .inputs .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main #contatos .contatos-form .inputs .form-group label {
+  font-weight: bold;
+}
+main #contatos .contatos-form .inputs .btn {
+  background: #CAD4FA;
+  margin-top: 2rem;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+  transition: 0.3s;
+}
+main #contatos .contatos-form .inputs .btn:hover {
+  background: #4e75ff;
+}
+
+footer {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #E8F5C8;
+}
+footer p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #000000;
+  padding: 15px;
+}/*# sourceMappingURL=style.css.map */
